@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Desafio Capgemini 2</title>
+</head>
+<body>
+    <h1>#Questão 2</h1>
+	<section>
+		<div class="input-group">
+			<input type="password" id="password" placeholder="Insira sua senha"><br>
+		</div>
+		<p class="msg"></p>
+
+	</section>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+
+		let regEx1 = /\d/,
+		regEx2 = /[a-z]/,
+		regEx3 = /\W/,
+		regEx4 = /[A-Z]/;
+
+		document.querySelector('#password').addEventListener('keyup', function(event){
+			if(event.keyCode!=32 && event.keyCode!=20 && event.keyCode!=16){
+				let check= checkPassword(this.value);
+				document.querySelector('.msg').innerText=message(check)
+			}
+			
+		})
+		function checkPassword(value){
+			let level=0;
+				if(value.length>5){
+					regEx1.test(value) ? ++level:'';
+					regEx2.test(value) ? ++level:'';
+					regEx3.test(value) ? ++level:'';
+					regEx4.test(value) ? ++level:'';
+				}
+				
+			return level
+		}
+		function message(index){
+			let message =[
+				'Menor que 6',
+				'Muito Fraca',
+				'Fraca',
+				'Média',
+				'Alta',
+				'Forte'
+			]
+			return message[index]
+		}
+	</script>
+</body>
+</html>

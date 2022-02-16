@@ -1,0 +1,9 @@
+body{
+    font-family: Arial;
+    font-size: 16;
+    text-align: center;
+    display: flexbox;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(34, 31, 104) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+}
