@@ -8,6 +8,8 @@ Olá, para executar este desafio você pode executar os seguintes passos:
         *Para carregar o estilo você precisa criar o TXT, colar o códico do arquivo css e salvar na mesma pasta que se encontra o 'index.html'. Após colar o código, salve como style.css.
         *Clique no arquivo 'index.html' e abrirá um página com algumas informações.
 
+    Tecnologias usadas: HTML e CSS.
+
     Qualquer dúvida estou a disposição.
 
     Obs: Dúvidas só chamar no WhatsApp (47)99281-4816 ou no email wellimgtomklim@gmail.com
